@@ -1,0 +1,14 @@
+Block,Net_or_pin,Connects_to,Design_review_note
+Power,VIN,Input connector and regulator input,Add reverse-polarity/overcurrent protection as required
+Power,3V3,ESP32 3V3 and sensor headers,Only if regulator can support peak load
+Power,GND,All ground pins and plane,Use continuous return path where practical
+I2C,SDA,ESP32 selected SDA GPIO and header SDA,Add pull-up to 3V3 if required
+I2C,SCL,ESP32 selected SCL GPIO and header SCL,Add pull-up to 3V3 if required
+SPI,SCLK,ESP32 SPI clock and header SCLK,Keep short and review edge rate
+SPI,MOSI,ESP32 MOSI and header MOSI,3.3 V logic only unless shifted
+SPI,MISO,Header MISO and ESP32 MISO,Confirm sensor output logic level
+SPI,CS,ESP32 chip-select GPIO and header CS,Review strapping-pin implications
+UART,TX,ESP32 UART TX and header TX,Label board TX as MCU output
+UART,RX,ESP32 UART RX and header RX,Label board RX as MCU input
+Debug,EN,Reset circuit or module EN,Follow exact module reference design
+Debug,BOOT,Boot-mode circuit if bare module,DevKit may already include circuitry

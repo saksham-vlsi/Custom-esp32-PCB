@@ -1,0 +1,12 @@
+Signal,Proposed_GPIO,Direction,Connector_or_device,Notes
+I2C_SDA,21,Bidirectional,I2C header,Verify against exact ESP32 variant
+I2C_SCL,22,Output,I2C header,Verify against exact ESP32 variant
+SPI_SCLK,18,Output,SPI header,VSPI-style assignment on common ESP32 variants
+SPI_MISO,19,Input,SPI header,Verify module/board constraints
+SPI_MOSI,23,Output,SPI header,Verify module/board constraints
+SPI_CS,5,Output,SPI header,GPIO5 may be a strapping pin on classic ESP32; review boot behavior
+UART_TX,17,Output,UART header,Example assignment; configure peripheral mapping
+UART_RX,16,Input,UART header,Example assignment; configure peripheral mapping
+STATUS_LED,2,Output,Status LED,GPIO2 can be a strapping pin on some variants
+GND,NA,Power,All connectors,Common ground required
+3V3,NA,Power,Sensor headers,Confirm rail capacity and sensor current

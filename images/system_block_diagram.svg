@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="260" viewBox="0 0 1000 260">
+  <rect width="1000" height="260" fill="#ffffff"/>
+  <g font-family="Arial, sans-serif" stroke="#334155" stroke-width="2" fill="#f8fafc">
+    <rect x="30" y="70" width="190" height="85" rx="10" fill="#dbeafe"/>
+    <rect x="285" y="70" width="190" height="85" rx="10" fill="#dcfce7"/>
+    <rect x="540" y="70" width="190" height="85" rx="10" fill="#fef3c7"/>
+    <rect x="795" y="70" width="175" height="85" rx="10" fill="#ede9fe"/>
+    <path d="M220 112 H275 M265 102 L275 112 L265 122" fill="none"/>
+    <path d="M475 112 H530 M520 102 L530 112 L520 122" fill="none"/>
+    <path d="M730 112 H785 M775 102 L785 112 L775 122" fill="none"/>
+    <g stroke="none" fill="#1f2937" text-anchor="middle">
+      <text x="125" y="101" font-size="18" font-weight="bold">Sensors</text>
+      <text x="125" y="124" font-size="13">I2C / SPI / UART</text>
+      <text x="380" y="101" font-size="18" font-weight="bold">ESP32</text>
+      <text x="380" y="124" font-size="13">Sampling + validation</text>
+      <text x="635" y="101" font-size="18" font-weight="bold">Wi-Fi / MQTT</text>
+      <text x="635" y="124" font-size="13">Telemetry transport</text>
+      <text x="882" y="101" font-size="18" font-weight="bold">Broker / UI</text>
+      <text x="882" y="124" font-size="13">Monitoring consumer</text>
+    </g>
+  </g>
+  <rect x="285" y="185" width="445" height="42" rx="8" fill="#f1f5f9" stroke="#64748b"/>
+  <text x="507" y="211" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#334155">Regulated 3.3 V rail + decoupling + test points</text>
+  <path d="M507 185 V165" stroke="#64748b" stroke-width="2"/>
+  <text x="500" y="246" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">Conceptual architecture; final PCB layout and exports must be generated and reviewed in KiCad.</text>
+</svg>
